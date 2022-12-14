@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Newsitems from './Newsitems'
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Spinner from './spinner';
+import '../App.css';
 
 // whenever we are using state always keep instail value in it
 const News = (props) => {
@@ -94,7 +95,7 @@ const updateNews = async ()=>
         return (
 
             <>
-                <h2 className='text-center my-5'>News-Monster top headline</h2>
+                <h2 className='text-center my-5' style={{margin:'40px 0px'}}>News-Monster top headline</h2>
                 {loading && <Spinner />}
 
                 <InfiniteScroll className='my-3'
